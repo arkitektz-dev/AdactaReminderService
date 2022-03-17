@@ -6,8 +6,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Adacta Reminder Service"/>
   <Description DefaultValue="Extending the properties of outlook meetings."/>
-  <IconUrl DefaultValue="https://invizentech.com/hasham/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://invizentech.com/hasham/assets/icon-128.png"/>
+  <IconUrl DefaultValue="https://adactareminders.herokuapp.com/hasham/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://adactareminders.herokuapp.com/hasham/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://invizentech.com/hasham/taskpane.html"/>
+        <SourceLocation DefaultValue="https://adactareminders.herokuapp.com/hasham/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -86,13 +86,13 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://invizentech.com/hasham/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://invizentech.com/hasham/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://invizentech.com/hasham/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://adactareminders.herokuapp.com/hasham/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://adactareminders.herokuapp.com/hasham/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://adactareminders.herokuapp.com/hasham/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://invizentech.com/hasham/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://invizentech.com/hasham/taskpane.html"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://adactareminders.herokuapp.com/hasham/commands.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://adactareminders.herokuapp.com/hasham/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Adacta Add-in"/>
