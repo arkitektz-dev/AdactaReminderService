@@ -1,0 +1,114 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adacta Reminder Service Add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js" type="text/javascript"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <section id="sideload-msg" class="ms-welcome__main">
+        <h2 class="ms-font-xl">Please sideload your add-in to see app body.</h2>
+    </section>
+    <main id="app-body" class="ms-welcome__main" style="display: none;">
+        <form>
+            <div class="row">
+              <div class="col-25">
+                <strong><label for="Email">Email</label></strong>
+              </div>
+              <div class="col-60">
+                <input type="text" id="email" name="email" placeholder="Email" />
+              </div>
+              <div class="col-15">
+                <img id="emailProvided" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <strong><label for="SMS">SMS</label></strong>
+              </div>
+              <div class="col-60">
+                <input type="text" id="sms" name="sms" placeholder="sms" />
+              </div>
+              <div class="col-15">
+                <img id="smsProvided" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <strong><label for="Host">Host</label></strong>
+              </div>
+              <div class="col-60">
+                <input type="text" id="host" name="host" placeholder="host" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <strong><label for="Location">Location</label></strong>
+              </div>
+              <div class="col-60">
+                <select id="location" name="location">
+                  <option value=""></option>
+                  <option value="Adacta Malmö">Adacta Malmö</option>
+                  <option value="Adacta Lund">Adacta Lund</option>
+                  <option value="Adacta Trelleborg">Adacta Trelleborg</option>
+                  <option value="Adacta Karlskrona ">Adacta Karlskrona</option>
+                  <option value="Adacta Köpenhamn">Adacta Köpenhamn</option>
+                  <option value="Telefonmöte">Telefonmöte</option>
+                  <option value="Annan plats">Annan plats</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <strong><label for="Phone">Phone</label></strong>
+              </div>
+              <div class="col-60">
+                <input type="text" id="Phone" name="Phone" placeholder="Phone" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">&nbsp;</div>
+              <div class="col-60">
+                <input type="checkbox" id="enableReminder" name="enableReminder" title="Enable Reminder" />
+                <label for="enableReminder"> Enable Reminder</label><br />
+                <input type="checkbox" id="autosave" name="autosave" value="autosave" title="Auto Save" />
+                <label for="autosave"> Auto Save</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-50">
+                <label>Reminder Status:</label>
+              </div>
+              <div class="col-50">
+                <label id="ReminderStatus">Checking...</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <input type="image" src="../../assets/Refresh_icon.svg.png" width="42" height="44" id="app-refresh" />
+              </div>
+              <div class="col-60" style="text-align: right;">
+                <input type="image" src="../../assets/ExitIcon.png" width="42" height="44" id="app-submit" />
+              </div>
+            </div>
+          </form>
+    </main>
+</body>
+
+</html>
